@@ -1,8 +1,8 @@
 # Coffee shop management system
 
 print("Welcome to the coffee shop management system")
-
-answer = input("Do you want to drink something? (yes/no) ").lower()
+while True :
+ answer = input("Do you want to drink something? (yes/no/exit) ").lower()
 
 if answer == "yes":
     drink = input("What do you want to drink? (tea/coffee) ").lower()
@@ -43,5 +43,10 @@ if answer == "yes":
 elif answer == "no":
     print("No problem, have a nice day!")
 
+elif answer =="exit":
+    print("Thanks for visiting,goodbye!")
+    
+    break
+
 else:
-    print("Sorry, we can't help you.")
+    print("Sorry, we can't help you")
